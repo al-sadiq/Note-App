@@ -59,6 +59,5 @@ function renderNotes() {
   });
 }
 
-
 renderNotes(); 
 
