@@ -1,0 +1,152 @@
+
+html {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://preview.redd.it/5486c2u7e5gb1.jpg?auto=webp&s=0b799e5181d8559011af9de2cc7fa2fc30bd05e3');
+
+  height: 100%;
+  
+}
+@keyframes zoomIn {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+* {
+  animation: zoomIn 0.8s ease forwards;
+}
+
+*, body {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+
+}
+
+nav {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+nav h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.search input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  color: #f8f8f8;
+  background-color: #ee9bd975;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  padding: 30px 600px;
+  
+
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color:#fff;
+  font-family:'Courier New', Courier, monospace;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.card {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 87%, rgba(148,187,233,1) 87%);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(238, 174, 202, 0.8), 0 0 40px rgba(148, 187, 233, 0.8), 0 0 80px rgba(148, 187, 233, 0.8);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card input, textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.addNote {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff00f2;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f1f1f1;
+  transition: transform 0.3s ease; 
+
+}
+.project:addNote {
+  transform: scale(1.1); 
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.notes-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.note {
+  width: 300px;
+  background-color: #ebbfdc;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+}
+
+.note .delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #2093c0;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
